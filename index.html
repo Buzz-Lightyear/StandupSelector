@@ -76,6 +76,8 @@
             function startSpin()
             {
                 document.getElementById("profile").src = ""
+                document.getElementById('profile').style.height= '0px'
+
                 document.getElementById("person").innerHTML = "?"
 
                 theWheel = createWheel(participants)
@@ -87,6 +89,7 @@
             {   
                 var imgSrc = "images/"+indicatedSegment.text.toLowerCase()+".jpg"
                 document.getElementById("profile").src = imgSrc
+                document.getElementById('profile').style.height= '400px'
                 document.getElementById("person").innerHTML = indicatedSegment.text.toUpperCase()
                 
                 let newParticipants = []
